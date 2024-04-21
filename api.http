@@ -1,0 +1,28 @@
+POST http://localhost:3333/events
+Content-Type: application/json
+
+{
+    "title": "Unite Summit 02 " ,
+    "details": "evento",
+    "maximumAttendees": 100
+}
+
+
+###
+
+POST http://localhost:3333/events/4acbd555-47ce-4c0a-a0f2-c00deb11f57e/attendees
+Content-Type: application/json
+
+{
+    "name" : "Nicolas Freitas",
+    "email": "nicolas@email.com"
+}
+
+### 
+GET http://localhost:3333/events/4acbd555-47ce-4c0a-a0f2-c00deb11f57e
+Content-Type: application/json
+
+### 
+
+GET http://localhost:3333/attendees/1/badge
+Content-Type: application/json
